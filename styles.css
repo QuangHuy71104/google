@@ -1,0 +1,238 @@
+*{
+    font-family: 'Arial', sans-serif;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+.top{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.center{
+    padding: 20px;
+}
+.topRight{
+    width: 16%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+.signIn{
+    font-size: 14px;
+    padding: 10px 20px 13px 20px;
+    color: white;
+    background-color: #0B57D0;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.signIn:hover{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 3px;
+}
+.app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.app:hover{
+    background-color: #f2f2f2;
+}
+.topRight a{
+    color: #1F1F1F;
+    font-size: 13px;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.search{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 590px;
+    height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1px 4px 6px;
+    border-radius: 25px;
+    border: 1px solid #DFE1E5;
+    cursor: pointer;
+    margin: 20px;
+}
+.search:hover{
+    border-color: white;
+}
+.inputSearch{
+    font-size: 16px;
+    width: 75%;
+    height: 80%;
+    border: none;
+    outline: none;
+}
+.imageSearch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%px;
+    padding: 0 0 0 12px;
+}
+i{
+    font-size: 14px;
+    color: #9AA0A6;
+}
+.searchByImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px 0 0;
+}
+.underCenter{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+.googleOfferedIn{
+    display: flex;
+    align-items:  center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: small;
+}
+.googleOfferedIn p{
+    color: #474747;
+}
+.googleOfferedIn a{
+    color: #1A0DAB;
+    text-decoration: none;
+}
+.googleOfferedIn a:hover{
+    text-decoration: underline;
+}
+.underInputSearch{
+    display: flex;
+    justify-content: center;
+}
+.inUnderInputSearch{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    height: 36px;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+.inUnderInputSearch:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 1px;
+    border-color: #DFE1E5;
+}
+.bot1{
+    background-color: #F2F2F2;
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+}
+.bot1 p{
+    margin: 0;
+    color: #1f1f1f;
+    font-size: 15px;
+}
+.bot2{
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 20px;
+}
+.bot2 .botLeft a{
+    padding: 14px;
+    font-size: 14px;
+    color: #1f1f1f;
+    text-decoration: none;
+}
+.bot2 .botLeft a:hover{
+    text-decoration: underline;
+}
+.bot2 .botRight a{
+    padding: 14px;
+    font-size: 14px;
+    color: #1f1f1f;
+    text-decoration: none;
+}
+.bot2 .botRight a:hover{
+    text-decoration: underline;
+}
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Nút Settings */
+.dropbtn {
+    background: none;
+    border: none;
+    color: blue;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* Nội dung dropdown (ẩn mặc định) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 220px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    overflow: hidden;
+    bottom: 25px; /* Hiện dropdown phía trên */
+    right: 0;
+}
+
+/* Các mục trong dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+/* Hiệu ứng hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Đường phân cách */
+.dropdown-content hr {
+    margin: 5px 0;
+    border: 0.5px solid #ddd;
+}
+
+/* Hiển thị dropdown khi click */
+.show {
+    display: block;
+}
